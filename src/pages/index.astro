@@ -21,5 +21,13 @@ const pageTitle = "Page d’accueil";
 		<p>Mon premier site Astro - artsetstrateges sur Netlify</p>
 		<a href="https://artsetstrateges.netlify.app" target="_blank">Visiter le site publié</a>
 		<Footer />
+		<script>
+    		const menu = document.querySelector('.menu');
+
+    		menu?.addEventListener('click', () => {
+      		const isExpanded = menu.getAttribute('aria-expanded') === 'true';
+      		menu.setAttribute('aria-expanded', `${!isExpanded}`);
+    		});
+  		</script>
 	</body>
 </html>
