@@ -1,4 +1,7 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 
 const pageTitle = "Page d’accueil";
@@ -13,10 +16,10 @@ const pageTitle = "Page d’accueil";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Accueil</a> / <a href="/about/">À propos</a> / <a href="/blog/">Blog</a>
-
+		<Header />
 		<h1>{pageTitle}</h1>
 		<p>Mon premier site Astro - artsetstrateges sur Netlify</p>
 		<a href="https://artsetstrateges.netlify.app" target="_blank">Visiter le site publié</a>
+		<Footer />
 	</body>
 </html>
